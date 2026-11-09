@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, Roboto, sans-serif;
+            background: #D32F2F;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 24px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .icon { font-size: 64px; margin-bottom: 16px; }
+        h1 { font-size: 22px; margin: 0 0 12px 0; }
+        p { font-size: 15px; line-height: 1.5; opacity: 0.95; max-width: 340px; }
+        .url-box {
+            background: rgba(255,255,255,0.15);
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin: 16px 0;
+            font-size: 13px;
+            word-break: break-all;
+            max-width: 340px;
+        }
+        .primary-btn {
+            background: white;
+            color: #D32F2F;
+            border: none;
+            border-radius: 24px;
+            padding: 14px 32px;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 20px;
+            width: 100%;
+            max-width: 300px;
+        }
+        .proceed-link {
+            margin-top: 20px;
+            font-size: 13px;
+            color: rgba(255,255,255,0.75);
+            text-decoration: underline;
+            background: none;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+<div class="icon">&#9888;</div>
+<h1 id="titleText">Dangerous Link Blocked</h1>
+<p id="descText">ShieldLink detected that this link matches known malicious content and blocked it to protect you.</p>
+<div class="url-box" id="urlText"></div>
+
+<button class="primary-btn" onclick="Android.goBack()">Go Back to Safety</button>
+<button class="proceed-link" onclick="Android.proceedAnyway()">I understand the risk — proceed anyway</button>
+
+<script>
+    function setUrl(url) {
+        document.getElementById('urlText').innerText = url;
+    }
+</script>
+</body>
+</html>

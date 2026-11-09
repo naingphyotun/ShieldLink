@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vt_setup_title">VirusTotal API key</string>
+    <string name="vt_intro">ShieldLink checks links with VirusTotal. Use your own free VirusTotal key so the checks run on your account. Gambling-site blocking works without a key.</string>
+    <string name="vt_step1_title">1. Get your free key</string>
+    <string name="vt_step1_body">Create a free VirusTotal account (or sign in), then open the API key page and copy the key. It is 64 letters and numbers.</string>
+    <string name="vt_open_signup">Open VirusTotal sign-up</string>
+    <string name="vt_open_keypage">Open my API key page</string>
+    <string name="vt_step2_title">2. Paste it here</string>
+    <string name="vt_step2_body">The key is checked once with VirusTotal, then stored encrypted on this phone. It is never shown in full again.</string>
+    <string name="vt_key_hint">Paste your API key</string>
+    <string name="vt_paste">Paste</string>
+    <string name="vt_save_test">Save and test</string>
+    <string name="vt_remove_key">Remove saved key</string>
+    <string name="vt_no_key_saved">No key saved yet.</string>
+    <string name="vt_key_saved_as">Saved key: %1$s</string>
+    <string name="vt_clipboard_empty">Clipboard is empty. Copy your key first.</string>
+    <string name="vt_key_format_wrong">That does not look like a VirusTotal key (64 letters and numbers).</string>
+    <string name="vt_checking_key">Checking key with VirusTotal…</string>
+    <string name="vt_key_saved">Key works and is saved.</string>
+    <string name="vt_key_saved_rate_limited">Key saved. VirusTotal says the free limit (4 requests per minute) is used up right now, so wait a minute before testing.</string>
+    <string name="vt_key_invalid">VirusTotal rejected this key. Copy it again from your API key page.</string>
+    <string name="vt_network_error">Could not reach VirusTotal. Check your connection and try again.</string>
+    <string name="vt_key_removed">Key removed. Link checks fall back to the gambling list only.</string>
+    <string name="vt_step3_title">3. Testing ground</string>
+    <string name="vt_step3_body">Try a link before you rely on it. The harmless EICAR test file is flagged on purpose by antivirus engines: https://secure.eicar.org/eicar.com</string>
+    <string name="vt_test_hint">https://example.com</string>
+    <string name="vt_test_button">Test link</string>
+    <string name="vt_testing">Checking…</string>
+    <string name="vt_test_failed">Test failed. Check the key and your connection.</string>
+    <string name="vt_test_result">Verdict: %1$s\nEngines flagging it: %2$d of %3$d\nTime: %4$d ms</string>
+</resources>
